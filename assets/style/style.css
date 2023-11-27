@@ -10,19 +10,21 @@
 
 }
 
+/* Adds background color */
 body {
     background-color: var(--background);
 }
 
+/* Changes background and font color. Adds margin so it doesn't touch page border. */
 header {
     background-color: var(--dark);
     color: var(--font);
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0 2%;
 }
 
+/* Aligns the h1 text to left side of header. */
 header h1 {
     display: flex;
     margin-left: 2rem;
@@ -30,19 +32,24 @@ header h1 {
 
 }
 
+/* Moves nav bar to right side of header. */
 nav {
     display: flex;
-    margin-left: auto;
-    margin-right: 2rem;
     font-size: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 2rem auto auto;
 }
 
+/* Removes bullet points. */
+ul {
+    list-style-type: none;
+}
+
+/* Makes the nav bar responsive. */
 #header-navigation{
     display: flex;
 }
 
+/* Aligns nav bar elements and creates space between them. */
 #header-navigation li {
     text-align: center;
     padding: 0.5rem;
@@ -50,63 +57,71 @@ nav {
   
 }
 
+/* Removes underline and changes font color. */
 a {
     text-decoration: none;
     color: var(--font);
 }
 
+/* Make sure the main elements are taking up whole space. */
 main {
     height: 100%;
 }
 
+/* Creates space between header and context underneath. */
 .about-me-header {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
+/* Align in center and change font. */
 h2 {
     text-align: center;
     color: var(--font);
 }
 
+/* Creates length of horizontal line. */
 hr {
     width: 50%;
     border: 1px solid var(--font);
 }
 
-.container img {
-    display: flex;
-    max-width: 100%;
-}
-
+/* Makes the section header and content into a column to seperate. */
 #about-me {
     display: flex;
     flex-direction: column;
 }
 
+/* Seperates img and text so they're next to eachother in a row. */
 #about-me figure {
     display: flex;
     flex-direction: row;
 }
 
+/* Styling the image and changing the size */
 #about-me img {
+    display: flex;
     max-width: 30%;
     max-height: 25rem;
     margin: auto 3rem auto 2rem;
     border: 6px solid var(--light);
 }
 
+
+/* Aligning the text for about me. */
 #about-me ul {
     margin: auto 7rem auto auto;
     line-height: 1.5;
     text-align: center;
 }
 
+/* Adding margin and font color to about me text. */
 #about-me li {
     margin-bottom: 1rem;
     color: var(--font);
 }
 
+/* Seperates section header and the content. */
 #portfolio {
     display: flex;
     flex-direction: column;
@@ -114,76 +129,66 @@ hr {
     margin-top: 2rem;
 }
 
-
+/* Makes the content into two seperate rows. */
 #portfolio-container {
     display: flex;
     flex-direction: row;
     height: 90%;
 }
 
+/* Styling and making the size. */
 #main-project {
     display: flex;
-    /* flex-direction: column; */
     width: 120%;
     height: auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem; 
-    margin-left: 3rem;
-    margin-right: 1rem;
     border: 6px solid var(--light);
+    margin: 3rem 1rem 2rem 3rem;
 }
 
+/* Styling and aligning the header for the main project. */
 .main-header {
     position: absolute;
     display: flex;
     flex-direction: column;
     width: auto;
     margin-left: 3%;
-    /* margin-bottom: -5.5rem; */
     margin-right: auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
     background-color: var(--light);
     text-align: center;
     color: var(--font);
+    
 }
 
-#main-project a {
-    width: 100%;
-    height:100%; 
-}
-
+/* Lets the image take the whole area */
 #main-project img{
     width: 100%;
     height: 100%; 
     
 }
 
+/* Effecting the size and layout of the side projects. */
 .projects {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: auto; */
     max-height: 100%;
-    margin-right: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin: 3rem 3rem 2rem 0;
 }
 
+/* Adjust the size of the image */
 .projects a {
+    height: 100%;
     width: 25%;
 }
 
+/* Makes image take the entire area. */
 .projects img {
     width: 100%;
     height: 100%;
 }
 
-.projects a{
-    height: 100%;
-}
-
+/* Adjust the size of each of the projects on the side. */
 .side-projects {
     max-height: 29%;
     width: auto;
@@ -193,10 +198,12 @@ hr {
     border: 6px solid var(--light);
 }
 
+/* Changes the distance between each side project. */
 .project-margin {
     margin-bottom: 1rem;
 }
 
+/* Styling and aligning the header for the side projects. */
 .project-header{
     position: absolute;
     display: flex;
@@ -206,23 +213,27 @@ hr {
     margin-left: 3%;
     margin-right: auto;
     font-size: 75%;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
     text-align: center;
     background-color: var(--light);
 }
 
+/* Display this when screen size is smaller. */
+#hidden-project {
+    display: none;
+}
+
+/* Adjusting the size of the bottom project to align with the other projects. */
 #bottom-project {
     display: flex; 
-    margin-left: 3rem;
-    margin-right: 3rem;
-    height: 10rem;
-    max-height: 10rem;
+    margin: -0.5rem 3rem 0 3rem;
+    height: 11rem;
+    max-height: 11rem;
     width: auto;
     border: 6px solid var(--light);
 }
 
+/* Styling and aligning the header for the bottom project. */
 .bottom-header {
     position: absolute;
     display: flex;
@@ -233,45 +244,50 @@ hr {
     margin-left: 3%;
     margin-right: auto;
     text-align: center;
-    /* border-radius: 5%; */
+    font-size: 85%;
 }
 
+/* Effects how much area the image takes up. */
 #bottom-project a {
     height: 100%;
     width: 100%;
 }
 
+/* Lets the image take up all area it is contained in. */
 #bottom-project img {
     width: 100%;
     height: 100%;
 }
 
+/* Seperates the section header with the content and also aligns it to the center. */
 #contact {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
+/* Aligning the elements that are the links to the contact information. */
 #contact-information {
     display: flex;
     flex-direction: row;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Styling and effecting the distance between each anchor for contacting. */
 .information {
     background-color: var(--light);
     color: var(--font);
     font-size: 1rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 1rem 0 1rem;
     padding: 1rem;
     border-radius: 5%;
     text-align: center;
 }
 
+/* Will remove the about me image and show only text. Also changes margin for bottom project. */
 @media screen and (max-width: 1050px){
     #about-me img {
         display: none;
@@ -282,8 +298,12 @@ hr {
         margin-left: auto;
         padding: 0;
     }
+    #bottom-project {
+        margin-top: -0.75rem;
+    }
 }
 
+/* Header will be in a column. All borders become 4px. Adjust the position of all projects. */
 @media screen and (max-width: 700px){
     header {
         flex-direction: column;
@@ -320,9 +340,10 @@ hr {
     }
 }
 
+/* The projects will be in a column. It removes the bottom project and instead adds another project to the same section as all the other project. */
 @media screen and (max-width: 550px) {
     #portfolio {
-        height: 55rem;
+        height: 60rem;
     }
 
     #portfolio-container {
@@ -340,18 +361,23 @@ hr {
         margin-top: 1rem;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 0;
         width: 90%;
         height: 100%;
     }
 
     .side-projects {
         max-height: 8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #hidden-project {
+        display: block;
+        /* margin-top: 1rem; */
     }
 
     #bottom-project {
-        margin-top: -1.2rem;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
     }
 }
