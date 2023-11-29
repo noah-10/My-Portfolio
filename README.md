@@ -18,4 +18,4 @@
 
 ## Usage
 
--The webpage can be viewed by this [link](https://noah-10.github.io/My-Portfolio/).
+- The webpage can be viewed by this [link](https://noah-10.github.io/My-Portfolio/).
