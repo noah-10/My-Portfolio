@@ -389,6 +389,16 @@ hr {
     text-align: center;
 }
 
+.information a {
+    transition: 0.5s ease;
+}
+
+.information a:hover {
+    background-color: var(--background);
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+
 /* Will remove the about me image and show only text. Also changes margin for bottom project. */
 @media screen and (max-width: 1050px){
     #about-me img {
