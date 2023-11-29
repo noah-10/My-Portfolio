@@ -16,6 +16,10 @@
 - By clicking any of the contact informations, it will lead you directly to that source to contact me.
 - The website can be viewed on any platform: laptop, tablet, and mobile device.
 
+## Sources
+
+- Hovering transition was learned through [Stackoverflow](https://stackoverflow.com/)
+
 ## Usage
 
 - The webpage can be viewed by this [link](https://noah-10.github.io/My-Portfolio/).
